@@ -194,12 +194,12 @@ class ClassificationHead(nn.Module):
     def __init__(self, config: TSFMConfig):
         super(ClassificationHead, self).__init__()
         self.dropout = nn.Dropout(config.head_dropout)
-        self.head = nn.Linear(config.dim, config.num_classes)
+        self.head = nn.Linear(config.dim * config.input_channels, config.num_classes)
         self.flatten = nn.Flatten()
 
     def forward(self, x):
         # input shape: (B, C, N, D)
-        x_avg = x.mean(dim=(1,2))  # (B, C, D)
+        x_avg = x.mean(dim=2)  # (B, C, D)
         logits = self.head(self.dropout(self.flatten(x_avg)))
         return logits
 
