@@ -127,12 +127,10 @@ class Trainer:
                     if val_loss < self.best_val_loss:
                         self.best_val_loss = val_loss
                         self.patience_counter = 0
-                        best_model_state = self.model.state_dict()
                     else:
                         self.patience_counter += 1
                         if self.patience_counter >= self.early_stopping_patience:
                             print("Early stopping triggered.")
-                            self.model.load_state_dict(best_model_state)
                             break
 
     def evaluate(self, val_loader):
