@@ -20,7 +20,7 @@ This repository contains the implementation of **PE-TSFM**, a domain-specific ti
 
 ## Citation
 ```
-@article{liao2025pe,
+@article{liao2026pe,
   title={PE-TSFM: Self-Supervised Time-Series Learning for Generalizable Power Converter Health Monitoring under Unseen Conditions},
   author={Liao, Xinyuan and Zhang, Xinyue and Wei, Xing and Liu, Junwei and Zhao, Shuai and Bu, Siqi and Zhang, Yi},
   journal={IEEE Transactions on Industrial Electronics},
