@@ -15,7 +15,7 @@ This repository contains the implementation of **PE-TSFM**, a domain-specific ti
 ## 🏗️ Framework
 
 <p align="center">
-  <img src="https://github.com/xinyuanliao/pe-tsfm/blob/main/assets/patchtst.drawio.pdf" width="800px"/>
+  <img src="https://github.com/xinyuanliao/pe-tsfm/blob/main/assets/pe-tsfmv1.png" width="800px"/>
 </p>
 
 ## Citation
